@@ -30,3 +30,22 @@ body.light .nav{background:rgba(245,248,252,.78)}
 footer{max-width:1104px;margin:auto;padding:30px 28px 50px;border-top:1px solid var(--border);display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem}
 @media(max-width:800px){.nav{padding:0 5%}.menu{display:block;margin-left:auto;margin-right:8px}.nav nav{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 7%;background:var(--panel);flex-direction:column;gap:15px;border-bottom:1px solid var(--border)}.nav nav.open{display:flex}.hero{grid-template-columns:1fr;padding-top:135px;text-align:center}.hero-text{margin:auto}.hero-actions,.quick{justify-content:center}.hero-photo-wrap{height:400px}.photo-ring{width:260px;height:260px}.floating-card{display:none}.about-grid,.skills-layout{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr}.project-card.big{grid-column:span 1}.edu-grid,.achievement-grid{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:5px}.featured{margin-left:-28px}.contact-box{padding:38px 20px}footer{flex-direction:column;gap:8px}}
 @media(max-width:480px){.section{padding:85px 20px}.hero h1{font-size:3rem}.hero-photo-wrap{height:330px}.photo-ring{width:225px;height:225px}}
+
+/* Name inside profile circle */
+.photo-ring{
+  position:relative;
+  overflow:hidden;
+}
+
+.photo-name{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:25px;
+  text-align:center;
+  font-size:1.25rem;
+  font-weight:800;
+  color:white;
+  text-shadow:0 2px 8px rgba(0,0,0,.8);
+  z-index:5;
+}
